@@ -1,0 +1,180 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background: #fffaf4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: #29221e;
+}
+
+.logo {
+    color: #e7b66b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #e7b66b;
+}
+
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 70px 10%;
+    background:
+        linear-gradient(#0008, #0008),
+        url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600")
+        center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #e7b66b;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 58px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 25px;
+    background: #d69a4b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    text-align: center;
+    padding: 75px 15%;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.menu {
+    text-align: center;
+    padding: 60px 8%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.dish {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    padding-bottom: 25px;
+    box-shadow: 0 5px 20px #0001;
+}
+
+.dish-image {
+    height: 190px;
+    background-position: center;
+    background-size: cover;
+}
+
+.pizza {
+    background-image: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700");
+}
+
+.pasta {
+    background-image: url("https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700");
+}
+
+.burger {
+    background-image: url("https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700");
+}
+
+.dish h3 {
+    margin: 18px 0 10px;
+}
+
+.dish p {
+    margin-bottom: 12px;
+}
+
+.dish strong {
+    color: #bd8138;
+}
+
+footer {
+    text-align: center;
+    padding: 45px 15px;
+    background: #29221e;
+    color: white;
+}
+
+footer p {
+    margin-top: 12px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 0 7px;
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        width: 100%;
+        max-width: 350px;
+    }
+}
